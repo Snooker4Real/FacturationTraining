@@ -2,6 +2,7 @@ package fr.snooker4real.facturation.servlets;
 
 import java.io.*;
 
+import fr.snooker4real.facturation.business.Client;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -13,11 +14,12 @@ import jakarta.servlet.annotation.*;
 public class IndexServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
+
     /**
      * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
      */
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.getWriter().append("Facturation");
+
     }
 
     /**
